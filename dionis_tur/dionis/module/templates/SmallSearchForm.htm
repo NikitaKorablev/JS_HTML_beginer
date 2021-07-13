@@ -1,0 +1,68 @@
+﻿<div style="position: absolute; z-index: 100;" id="sm_popup_wrapper">
+  <div id="sm_select_city" style="display: none;">
+    <a id="sm_select_city_close" href="#" class="sm_right">Закрыть</a>
+    <ul id="sm_select_city_list"></ul>
+  </div>
+  <div id="sm_select_country" style="display: none;">
+    <ul id="sm_select_country_list"></ul> 
+  </div>
+  <div id="sm_select_resort" style="display: none;">
+    <ul id="sm_select_resort_list"></ul> 
+  </div>
+  <div id="sm_select_hotel" style="display: none;">
+    <ul id="sm_select_hotel_list"></ul> 
+  </div>
+  <div id="sm_select_currency" style="display: none;">
+    <ul id="sm_select_currency_list">
+      <li class="sm_active">RUB</li>
+      <li>USD</li>
+      <li>EUR</li>
+    </ul>
+  </div>
+</div>
+<div id="sm_widget">
+  <div id="sm_loading_wrapper">
+    <div id="sm_loading">
+      <img src="$module_path$/styles/images/loading.gif" alt="обработка запроса" />
+      <div id="sm_loading_comment">...обработка запроса...</div>
+    </div>
+  </div>
+  <div id="sm_body_small">
+    <table id="sm_table_small">
+      <tr>
+        <td class="sm_itemF">Город вылета:</td>
+        <td class="sm_itemS"><div id="sm_city"></div><a href="#" id="sm_city_open">Изменить</a></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Направление:</td>
+        <td class="sm_itemS"><div id="sm_country"></div><div id="sm_country_open"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Курорт:</td>
+        <td class="sm_itemS"><div id="sm_resort">Любой</div><div id="sm_resort_open"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Отель:</td>
+        <td class="sm_itemS"><div id="sm_hotel">Любой</div><div id="sm_hotel_open"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Заезд с:</td>
+        <td class="sm_itemS"><input type="text" id="sm_date_from" /><div id="sm_date_from_cal"></div><span class="sm_left">Ночей:</span><input type="text" id="sm_nights_min" value="3" /><div id="sm_nights_min_up"></div><div id="sm_nights_min_dn"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Взрослых:</td>
+        <td class="sm_itemS"><input type="text" id="sm_adults" value="2" /><div id="sm_adults_up"></div><div id="sm_adults_dn"></div><span class="sm_left">Детей:</span><input type="text" id="sm_kids" value="0" /><div id="sm_kids_up"></div><div id="sm_kids_dn"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Цена до:</td>
+        <td class="sm_itemS"><input type="text" id="sm_price_max" /><div id="sm_currency">RUB</div><div id="sm_currency_open"></div></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="#" id="sm_searching">Найти</a></td>
+      </tr>
+    </table>
+	<div id="sm_version" style="display:none">ver 1.00.0</div>
+  </div>
+</div>
+<div id="sm_attention"></div>

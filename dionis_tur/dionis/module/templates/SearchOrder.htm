@@ -1,0 +1,105 @@
+﻿<div id="sm_dialog" style="position: absolute; display: none;">
+  <div id="sm_report_error" style="display: none;">
+    <h3>Сообщить об ошибке</h3>
+    <p>Укажите тип ошибки (ошибка линковки - несоответствие описания тура с оригинальным у туроператора):</p>
+    <select id="sm_error_type">
+      <option value="1">Неверная линковка</option>
+      <option value="2">Неверная цена</option>
+      <option value="0">Другое</option>
+    </select>
+    <p>Добавьте описание ошибки / подробности:</p>
+    <textarea id="sm_error_desc" rows="4" cols="60"></textarea>
+    <br />
+    <input type="button" id="sm_send_error" value="отправить" size="40" />
+  </div>
+  <div id="sm_dialog_status"></div>
+  <div id="sm_dialog_content" style="display: none;">
+    <form action="/" id="sm_order_form">
+      <div style="height:380px;">
+        <div id="sm_tour_info" style="overflow:hidden;">
+          <h3>Информация о туре <span id="sm_wikicode"></span></h3>
+          <table>
+            <tr>
+              <td>Название:</td>
+              <td><span style="white-space:nowrap;" class="sm_tour_data" id="sm_tour_name"></span></td>
+            </tr>
+            <tr>
+              <td>Страна:</td>
+              <td><span class="sm_tour_data" id="sm_tour_country"></span></td>
+            </tr>
+            <tr>
+              <td>Курорт:</td>
+              <td><span class="sm_tour_data" id="sm_tour_city"></span></td>
+            </tr>
+            <tr>
+              <td>Город вылета:</td>
+              <td><span class="sm_tour_data" id="sm_tour_dptcity"></span></td>
+            </tr>
+            <tr>
+              <td>Дата вылета:</td>
+              <td><span class="sm_tour_data" id="sm_tour_checkin"></span></td>
+            </tr>
+            <tr>
+              <td>Ночей:</td>
+              <td><span class="sm_tour_data" id="sm_tour_nights"></span></td>
+            </tr>
+            <tr>
+              <td>Отель:</td>
+              <td><span class="sm_tour_data" id="sm_tour_hotel"></span></td>
+            </tr>
+            <tr>
+              <td>Номер:</td>
+              <td><span class="sm_tour_data" id="sm_tour_room"></span></td>
+            </tr>
+            <tr>
+              <td>Питание:</td>
+              <td><span class="sm_tour_data" id="sm_tour_meal"></span></td>
+            </tr>
+            <tr>
+              <td>Размещение:</td>
+              <td><span class="sm_tour_data" id="sm_tour_htplace"></span></td>
+            </tr>
+            <tr>
+              <td>Стопы:</td>
+              <td><span class="sm_tour_data" id="sm_tour_stops"></span></td>
+            </tr>
+          </table>
+        </div>
+        <a href="#" class="sm_right" id="sm_close_order_form">Закрыть</a>
+        <div id="sm_tour_order">
+          <h3>Контактные данные</h3>
+          <table>
+            <tr>
+              <td><span>Контактное лицо:</span></td>
+              <td><input type="text" id="sm_user" name="sm_user" maxlength="64" /></td>
+            </tr>
+            <tr>
+              <td><span>Контактный телефон:</span></td>
+              <td><input type="text" id="sm_phone" name="sm_phone" maxlength="64" /></td>
+            </tr>
+            <tr>
+              <td><span>E-Mail:</span></td>
+              <td><input type="text" id="sm_email" name="sm_email" maxlength="350" /></td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top; padding-left:7px;">Дополнительная информация:</td>
+              <td><textarea id="sm_info" rows="8" cols="40"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><span><img src="$module_path$/styles/images/blank.gif" alt="" width="1px" height="1px" />- обязательные поля для заполнения</span></td>
+            </tr>
+          </table>
+          <div id="sm_tour_order_error"></div>
+        </div>
+      </div>
+      <div class="sm_action">
+        <div class="sm_left">
+          <h2 class="sm_price" id="sm_tour_price"></h2>
+          <br />
+          <a style="display:none;" href="#" id="sm_show_report_form">сообщить об ошибке</a>
+        </div>
+        <input type="image" class="sm_sending sm_right" src="$module_path$/styles/images/request.gif" id="sm_send" alt="" style="width:216px; height:36px;" />
+      </div>
+    </form>
+  </div>
+</div>

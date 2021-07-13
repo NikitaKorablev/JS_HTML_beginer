@@ -1,0 +1,796 @@
+html {
+	width:100%;
+	padding:0;
+	margin:0;
+	/*background:#ccc url(images/html-bg.jpg) top left repeat-x;*/
+	background-color:#fff;
+}
+body {
+	width:100%;
+	padding:0;
+	margin:0;
+	font:14px Verdana, Arial, Tahoma, sans-serif;
+	color:#000;
+	text-align:left;
+}
+a {
+	outline: none;
+	color:#949240;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+h2 {
+	margin-top:0px;
+	font: 16px Verdana;
+	font-weight:bold;
+	color:#3c3c3c;
+}
+h3 {
+	margin-top:0px;
+	font: 14px Verdana;
+	font-weight:bold;
+	color:#3c3c3c;
+}
+img.alignright {float:right; margin:0 0 5px 5px;}
+img.alignleft {float:left; margin:0 5px 5px 0;}
+.clear {clear:both;}
+
+
+.container {
+	margin:0;
+	padding:0;
+}
+.wrapper {
+	width:1024px;
+	margin:0 auto;
+	padding:30px 0 0 0;
+}
+.header {
+	width:1024px;
+	/*height:500px;*/
+	position:relative;
+	/*margin-top:20px;*/
+}
+.header-top {
+	width:1004px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:999;
+	padding:0 10px;
+}
+.logo {
+	width:134px;
+	height:0px;
+	display:block;
+	background:transparent url(images/logo-new.png) top center no-repeat; /*есть пример в .jpg формате*/
+	padding-top:65px;
+	padding-left:60px;
+	overflow:hidden;
+	float:left;
+}
+.work-time {
+	width:300px;
+	height:45px;
+	font-family: Verdana;
+	font-size:11px;
+	color:#595959;
+	margin:0;
+	margin-left:200px;
+	padding:5px 0 0 200px;
+	background:transparent url(images/work.jpg) top left no-repeat;
+	
+}
+.work-time span {
+	font-weight:bold;
+}
+.login-box {
+	width:249px;
+	height:25px;
+	padding:6px 0 0 25px;
+	/*margin-right:10px;*/
+	float:right;
+	background:transparent url(images/login-bg.png) top left no-repeat;
+	color:#9f9f9f;
+}
+.reg {
+	height:14px;
+	padding-left:20px;
+	margin-right:15px;
+	background:transparent url(images/icon-registration.png) center left no-repeat;
+	color:#3c3c3c;
+	font-size:12px;
+	font-weight:bold;
+}
+.login {
+	height:14px;
+	padding-left:22px;
+	margin-left:15px;
+	background:transparent url(images/icon-login.png) center left no-repeat;
+	color:#3c3c3c;
+	font-size:12px;
+	font-weight:bold;
+}
+
+
+/* SLIDER */
+.slides_container {
+	width:1024px;
+	height:252px;
+}
+.slides_container div {
+	width:1024px;
+	height:252px;
+	display:block;
+	position:relative;
+}
+.slides_container div.first {
+	background:#fff url(images/palma1.jpg) top left no-repeat;
+}
+.slides_container div.second {
+	background:#fff url(images/sport-head1.jpg) top left no-repeat;
+}
+.slides_container div.third {
+	background:#fff url(images/gastr-head1.jpg) top left no-repeat;
+}
+.slides_container div a {
+	width:370px;
+	height:50px;
+	position:absolute;
+	bottom:10px;
+	right:0;
+	/*background-color:#000;*/
+	text-indent:-100px;
+	overflow:hidden;
+}
+/*#slides {
+	position:absolute;
+	top:0;
+	z-index:1;
+}*/
+
+
+/* TOP-MENU */
+.top-menu ul {
+	list-style-type:none;
+	margin:15px 0 0 0;
+	padding:0 10px;
+}
+.top-menu ul li {
+	/*margin:0 0 0 28px;*/
+	margin:0 0 0 16px;
+	float:left;
+	padding-left:14px;
+	background:#fff url(images/li-menu-arrow.jpg) 0% 85% no-repeat;
+}
+.top-menu ul li:first-child {
+	margin:0;
+}
+.top-menu ul li a {
+	color:#3c3c3c;
+	font-weight:bold;
+}
+
+/* FLAGS MENU */
+.flags-menu {
+	padding:15px 10px 0 10px;
+}
+.flags-menu span {
+	font: 18px Verdana;
+	font-weight:bold;
+	color:#3c3c3c;
+}
+.flags-menu ul {
+	list-style-type:none;
+	margin:15px 0 0 0;
+	padding:0;
+}
+.flags-menu ul li {
+	margin:0 0 0 44px;
+	float:left;
+}
+.flags-menu ul li:first-child {
+	margin:0;
+}
+.flags-menu ul li img {
+	padding-right:10px;
+}
+.flags-menu ul li a {
+	font-size:11px;
+	color:#3c3c3c;
+	padding-left: 21px;
+}
+.ontur ul li {
+	margin:0 0 0 20px;
+	float:left;
+	width:90px;
+}
+/* flags */
+.avstria {background: transparent url(images/flag-avstria.png) center left no-repeat;}
+.italy {background: transparent url(images/flag-italy.png) center left no-repeat;}
+.france {background: transparent url(images/flag-france.png) center left no-repeat;}
+.horvatia {background: transparent url(images/flag-horvatia.png) center left no-repeat;}
+.chernogoria {background: transparent url(images/flag-chernogoria.png) center left no-repeat;}
+.shvecia {background: transparent url(images/flag-shvecia.png) center left no-repeat;}
+.spain {background: transparent url(images/flag-spain.png) center left no-repeat;}
+.china {background: transparent url(images/flag-china.png) center left no-repeat;}
+.shveicaria {background: transparent url(images/flag-shveicaria.png) center left no-repeat;}
+
+/* GASTR menu */
+/* FLAGS MENU */
+.gastr-menu {
+	padding:15px 10px 0 10px;
+}
+.gastr-menu span {
+	font: 18px Verdana;
+	font-weight:bold;
+	color:#3c3c3c;
+}
+.gastr-menu ul {
+	list-style-type:none;
+	margin:15px 0 0 0;
+	padding:0;
+}
+.gastr-menu ul li {
+	margin:0 0 0 60px;
+	float:left;
+}
+.gastr-menu ul li:first-child {
+	margin:0;
+}
+.gastr-menu ul li a {
+	font-size:11px;
+	color:#3c3c3c;
+	/*padding-left: 21px;*/
+}
+
+/* CONTENT */
+.content {
+	padding:20px 10px;
+}
+.content-right {
+	width:660px;
+	float:right;
+}
+.content-left {
+	width:330px;
+	float:left;
+}
+
+/* RIGHT */
+.googlemaps {
+	width:660px;
+	height:45px;
+	display:block;
+	position:relative;
+	margin-bottom:10px;
+	/*background:#fff url(images/googlemaps-bg.png) top left no-repeat;*/
+}
+.googlemaps.gastr {
+	background:#fff url(images/googlemaps-bg.png) top left no-repeat;
+}
+.googlemaps.sport {
+	background:#fff url(images/googlemaps-bg-sport.png) top left no-repeat;
+}
+.googlemaps.tour {
+	background:#fff url(images/googlemaps-bg-yellow.png) top left no-repeat;
+}
+.googlemaps a {
+	height:24px;
+	width:71px;
+	display:block;
+	position:absolute;
+	top:10px;
+	left:220px;
+	padding:5px 0 0 18px;
+	text-decoration:none;
+	/*text-shadow:1px 1px 1px #fff;*/
+	font:11px Verdana;
+	color:#000;
+	/*background: transparent url(images/googlem-button-bg.png) left top no-repeat;*/
+}
+.googlemaps.gastr a {
+	background: transparent url(images/googlem-button-bg.png) left top no-repeat;
+}
+.googlemaps.sport a {
+	background: transparent url(images/googlem-button-bg-sport.png) left top no-repeat;
+}
+.googlemaps.tour a {
+	background: transparent url(images/googlem-button-bg-yellow.png) left top no-repeat;
+}
+
+/* POST-ANONS */
+.post-anons {
+	width:290px;
+	float:left;
+	margin-bottom:20px;
+	position:relative;
+}
+.r-anons {
+	float:right !important;
+	margin-right:25px;
+}
+/*.post-anons a {
+	float:left;
+}*/
+.post-anons > a > img.gastr {
+	float:left;
+	border:1px solid #b8b601;
+}
+.post-anons > a > img.sport {
+	border:1px solid #098eaa;
+}
+.post-anons > a > img.tour {
+	border:1px solid #efc237;
+}
+span.post-anons-pretitle {
+	height:55px;
+	width:125px;
+	display:block;
+	position:absolute;
+	top:0px;
+	left:162px;
+	padding:0 0 0 5px;
+	font:10px Verdana;
+	font-style:oblique;
+	color:#535201;
+	text-align:left;
+}
+.post-anons a.post-anons-title {
+	height:37px;
+	width:92px;
+	display:block;
+	position:absolute;
+	top:57px;
+	left:162px;
+	padding:8px 8px 0 24px;
+	font:12px Verdana;
+	font-style:oblique;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	/*background: transparent url(images/post-anons-title.png) left top no-repeat;*/
+}
+.post-anons a.post-anons-title.gastr {
+	background: transparent url(images/post-anons-title.png) left top no-repeat;
+}
+.post-anons a.post-anons-title.sport {
+	background: transparent url(images/post-anons-title-sport.png) left top no-repeat;
+}
+.post-anons a.post-anons-title.tour {
+	background: transparent url(images/post-anons-title-yellow.png) left top no-repeat;
+	color:#302f2f;
+}
+.post-anons p {
+	font:10px Verdana;
+	color:#302f2f;
+	line-height:18px;
+}
+.dotted {
+	width:660px;
+	height:2px;
+	margin:0 0 20px 0;
+	background: transparent url(images/dotted-line-bg.png) center left repeat-x;
+}
+/* STATI */
+.post {
+	
+}
+.post h1 {
+	font:14px Verdana;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#b21d00;
+	
+}
+.post > img {
+	float:left;
+	margin:0 10px 10px 0;
+}
+.post > img.gastr {
+	border:1px solid #b8b601;
+}
+.post > img.sport {
+	border:1px solid #098eaa;
+}
+.post > img.tour {
+	border:1px solid #efc237;
+}
+.post > p {
+	margin:0 0 15px 0;
+	font:11px Verdana;
+	color:#302f2f;
+	line-height:18px;
+}
+.post-date {
+	font:11px Verdana;
+	color:#136784;
+}
+.post-category {
+	font:11px Verdana;
+	color:#8d8d8d;
+}
+.post-tags {
+	font:11px Verdana;
+	color:#8d8d8d;
+	display:block;
+	float:right;
+}
+.post-tags > a {
+	color:#136784;
+}
+
+
+/* PROFILE */
+.post .author-name {
+	padding:0 0 10px 150px;
+	display:block;
+	font:18px Verdana;
+	color:#136784;
+	font-weight:bold;
+}
+.post > table {
+	width:519px;
+}
+.post > table tr td {
+	height:30px;
+	font:12px Verdana;
+	font-weight:bold;
+	color:#404040;
+	padding-left:20px;
+}
+.post > table tr td:first-child {
+	width:170px;
+	padding-left:20px;
+	border-right:1px solid #e6e6e6;
+}
+.post > table tr.alt {
+	width:170px;
+	background-color:#f7f5f5;
+}
+
+td.table-head {
+	width:519px;
+	height:32px !important;
+	padding-top:6px;
+	background: transparent url(images/table-head-bg.png) top left no-repeat;
+	text-transform:uppercase;
+	vertical-align:top;
+}
+
+
+
+/* REVIEWS of TOURISTS */
+.review-anons {
+	width:290px;
+	float:left;
+}
+span.review-anons-head {
+	display:block;
+	margin-bottom:15px;
+	font: 18px Verdana;
+	color:#3c3c3c;
+}
+span.review-anons-date {
+	font: 11px Verdana;
+	color:#8d8d8d;
+	display:block;
+}
+span.review-anons-title a {
+	font: 11px Verdana;
+	font-style:italic;
+	font-weight:bold;
+	color:#404040;
+}
+.review-anons p {
+	margin-top:0px;
+	font: 11px Verdana;
+	color:#404040;
+	text-align:justify;
+}
+
+
+
+/* LEFT */
+.left-anons {
+	padding-bottom:20px;
+	margin-top:10px;
+	border-bottom:1px solid #eaeaea;
+	
+}
+.no-border {border-bottom:none;}
+span.left-head {
+	height:26px;
+	width:315px;
+	display:block;
+	padding:5px 0 0 15px;
+	margin-bottom:10px;
+	background: #ccc url(images/left-title-bg.png) top left repeat-x;
+	font: 18px Verdana;
+	color:#3c3c3c;
+}
+span.anons-date {
+	font: 11px Verdana;
+	color:#8d8d8d;
+	display:block;
+}
+span.anons-title {
+	font: 11px Verdana;
+	font-style:italic;
+	font-weight:bold;
+	color:#404040;
+}
+.left-anons p {
+	margin-top:0px;
+	font: 11px Verdana;
+	color:#404040;
+	text-align:justify;
+}
+.readmore-link {
+	font:11px Verdana;
+	color:#949240;
+	padding-right:8px;
+	background: #fff url(images/readmore-link-bg.png) 100% 80% no-repeat;
+}
+p.button-gocategory a {
+	height:27px;
+	width:88px;
+	float:right;
+	display:block;
+	padding:8px 0 0 25px;
+	margin-bottom:10px;
+	text-decoration:none;
+	/*text-shadow:1px 1px 1px #fff;*/
+	font:11px Verdana;
+	color:#000;
+	/*background: #fff url(images/button-gocategory-bg.jpg) left top no-repeat;*/
+}
+p.button-gocategory.gastr a {
+	background: #fff url(images/button-gocategory-bg.jpg) left top no-repeat;
+}
+p.button-gocategory.sport a {
+	background: #fff url(images/button-gocategory-bg-sport.jpg) left top no-repeat;
+}
+p.button-gocategory.tour a {
+	background: #fff url(images/button-gocategory-bg-yellow.jpg) left top no-repeat;
+}
+a.gal-img {
+	float:left;
+	padding:0;
+	margin:0 0 10px 0;
+	border:none;
+}
+a.righ {
+	float:right;
+}
+
+/* LEFT menu toggle */
+.left-menu-head {
+	height:31px;
+	width:330px;
+	display:block;
+	padding:0;
+	margin-bottom:5px;
+	background: #ccc url(images/left-title-bg.png) top left repeat-x;
+}
+.left-menu-head:hover {
+	cursor:pointer;
+}
+.left-menu-head > span {
+	height:26px;
+	width:285px;
+	display:block;
+	padding:5px 0 0 35px;
+	margin:0 0 0 8px;
+	/*background: transparent url(images/sbh-email.png) center left no-repeat;*/
+}
+.left-menu-head > span > a {
+	display:block;
+	padding:0 8px 0 0;
+	margin:0 10px 0 0;
+	background: transparent url(images/arrow-down.png) center right no-repeat;
+	font: 14px Verdana;
+	color:#136784;
+}
+.left-menu-head:hover > span > a, .left-menu-head.active > span > a {
+	text-decoration:none;
+}
+.left-menu-head.num1 > span {
+	background: transparent url(images/sbh-email.png) center left no-repeat;
+}
+.left-menu-head.num2 > span {
+	background: transparent url(images/sbh-rss.png) center left no-repeat;
+}
+.left-menu-head.num3 > span {
+	background: transparent url(images/sbh-lastposts.png) center left no-repeat;
+}
+.left-menu-head.num4 > span {
+	background: transparent url(images/sbh-mostcomment.png) center left no-repeat;
+}
+.left-menu-head.num5 > span {
+	background: transparent url(images/sbh-mostpopular.png) center left no-repeat;
+}
+.left-menu-head.num6 > span {
+	background: transparent url(images/sbh-lastcomment.png) center left no-repeat;
+}
+div.line-solid {
+	height:0px;
+	border-bottom:1px solid #eaeaea;
+	margin:20px 0;
+}
+.toggle_container {
+	/*padding-bottom:20px;*/
+}
+
+/* FRIEND CLUB */
+.friend-post-anons {
+	padding-bottom:10px;
+	margin-bottom:10px;
+	background: transparent url(images/dotted1.png) left bottom repeat-x;
+}
+.friend-post-anons p {
+	font:10px Verdana;
+	color:#302f2f;
+	line-height:14px;
+}
+.ava {
+	width:121px;
+	display:block;
+	float:left;
+	font:14px Verdana;
+	font-weight:bold;
+	color:#136784;
+	margin-right:15px;
+	text-align:center;
+	text-decoration:none;
+}
+.ava > img{
+	border:1px solid #efc237;
+	margin-bottom:5px;
+}
+.friend-post-anons-date {
+	height:15px;
+	display:block;
+	float:left;
+	padding:3px 6px 0px 6px;
+	margin-right:10px;
+	font:10px Verdana;
+	color:#136784;
+	background: transparent url(images/date-bg.png) left top repeat-x;
+}
+.friend-post-anons-title {
+	padding:0;
+	font:12px Verdana;
+	font-weight:bold;
+	color:#404040;
+}
+.friend-post-anons-comments {
+	height:20px;
+	display:block;
+	float:left;
+	font:10px Verdana;
+	color:#302f2f;
+	padding-right:30px;
+	padding-top:10px;
+	margin-right:30px;
+	margin-left:140px;
+	background: transparent url(images/comments-cloud.png) 100% 60% no-repeat;
+}
+.friend-post-anons-like {
+	height:18px;
+	display:block;
+	float:left;
+	font:10px Verdana;
+	color:#302f2f;
+	padding-right:30px;
+	padding-top:10px;
+	margin-right:30px;
+	background: transparent url(images/thumb-up.png) right center no-repeat;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+	width:1024px;
+	height:89px;
+	margin: 0px auto 0;
+	/*background: transparent url(images/footer-bg.png) left top no-repeat;*/
+	position:relative;
+}
+.footer.gastr {
+	background: transparent url(images/footer-bg.png) left top no-repeat;
+}
+.footer.sport {
+	background: transparent url(images/footer-bg-sport.png) left top no-repeat;
+}
+.footer.tour {
+	background: transparent url(images/footer-bg-yellow.png) left top no-repeat;
+}
+.footer > p {
+	width:205px;
+	font:11px Verdana;
+	color:#3a2901;
+	position:absolute;
+	top:50px;
+	left:720px;
+	margin:0;
+	/*padding:30px 50px 0 0;*/
+}
+.footer > p a {
+	color:#3a2901;
+}
+.footer ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:53px;
+	left:180px;
+}
+.footer ul li {
+	margin:0 0 0 15px;
+	float:left;
+	padding-left:12px;
+	background: transparent url(images/footer-li-bg.png) 0% 70% no-repeat;
+}
+/*.top-menu ul li:first-child {
+	margin:0;
+}*/
+.footer ul li a {
+	color:#3c3c3c;
+	font:11px Verdana;
+}
+
+
+/*wp-navi style*/
+.wp-pagenavi {
+	clear: both;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #BFBFBF;
+	padding: 3px 5px;
+	margin: 2px;
+}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+}
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+
+
+img.flrt {float:right;}
+
+/* Комментарии */
+#comments .entry {
+	padding-bottom:15px;
+}
+#comments .entry .date {
+	font: 11px Verdana;
+	color:#8d8d8d;
+	display:block;
+	margin:0;
+}
+#comments .entry .name {
+	font: 11px Verdana;
+	font-style:italic;
+	font-weight:bold;
+	color:#404040;
+	border-left:2px solid #136784;
+	padding-left:5px;
+}
+#comments .entry .con p {
+	margin-top:0px;
+	font: 11px Verdana;
+	color:#404040;
+	text-align:justify;
+}
+.comments-form {
+	font: 11px Verdana;
+	color:#404040;
+}

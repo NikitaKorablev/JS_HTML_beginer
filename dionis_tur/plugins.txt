@@ -1,0 +1,8 @@
+Плагины:
+I Like This
+NextGEN Gallery
+RusToLat
+WP-Custom
+WP-PageNavi
+level2categories-2
+user-role-editor

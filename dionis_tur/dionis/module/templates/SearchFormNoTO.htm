@@ -1,0 +1,91 @@
+﻿<div style="position: absolute; z-index: 100;" id="sm_popup_wrapper">
+  <div id="sm_select_city" style="display: none;">
+    <a id="sm_select_city_close" href="#" class="sm_right">Закрыть</a>
+    <ul id="sm_select_city_list"></ul>
+  </div>
+  <div id="sm_select_country" style="display: none;">
+    <ul id="sm_select_country_list"></ul> 
+  </div>
+  <div id="sm_select_meal" style="display: none;">
+    <ul id="sm_select_meal_list"></ul> 
+  </div>
+  <div id="sm_select_currency" style="display: none;">
+    <ul id="sm_select_currency_list">
+      <li class="sm_active">RUB</li>
+      <li>USD</li>
+      <li>EUR</li>
+    </ul>
+  </div>
+</div>
+<div id="sm_loading_wrapper">
+  <div id="sm_loading">
+    <img src="$module_path$/styles/images/loading.gif" alt="обработка запроса" />
+    <div id="sm_loading_comment">...обработка запроса...</div>
+  </div>
+</div>
+<div id="sm_widget">
+  <div id="sm_body_expand">
+    <table id="sm_table_expand">
+      <tr>
+        <td class="sm_itemF">Город вылета:</td>
+        <td class="sm_itemS"><div id="sm_city">Загрузка...</div><a href="#" id="sm_city_open">Изменить</a></td>
+        <td></td>
+        <td style="white-space:nowrap"><span class="sm_left">Заезд с:</span><input type="text" id="sm_date_from" /><div id="sm_date_from_cal"></div><span class="sm_left">до:</span><input type="text" id="sm_date_to" /><div id="sm_date_to_cal"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Направление:</td>
+        <td class="sm_itemS"><div id="sm_country">Загрузка...</div><div id="sm_country_open"></div></td>
+        <td></td>
+        <td><span class="sm_left">Ночей от:</span><input type="text" id="sm_nights_min" value="3" /><div id="sm_nights_min_up"></div><div id="sm_nights_min_dn"></div><span class="sm_left">до:</span><input type="text" id="sm_nights_max" value="15" /><div id="sm_nights_max_up"></div><div id="sm_nights_max_dn"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Взрослых:</td>
+        <td class="sm_itemS"><input type="text" id="sm_adults" value="2" /><div id="sm_adults_up"></div><div id="sm_adults_dn"></div><span class="sm_left">Детей:</span><input type="text" id="sm_kids" value="0" /><div id="sm_kids_up"></div><div id="sm_kids_dn"></div></td>
+        <td></td>
+        <td><span class="sm_left">Цена от:</span><input type="text" id="sm_price_min" /><span class="sm_left">до:</span><input type="text" id="sm_price_max" /><div id="sm_currency">RUB</div><div id="sm_currency_open"></div></td>
+      </tr>
+      <tr>
+        <td class="sm_itemF">Питание:</td>
+        <td class="sm_itemS"><div id="sm_meal">Загрузка...</div><div id="sm_meal_open"></div></td>
+        <td></td>
+        <td>
+		   <ul id="sm_checkbox-list">
+            <li><input id="sm_HotelIsNotInStop" type="checkbox" checked="checked" /></li>
+            <li><label for="sm_HotelIsNotInStop">Есть места в отеле</label></li>
+            <li style="margin-left:0px;"><input id="sm_HasFlight" name="sm_HasFlight_n" type="checkbox" /></li>
+            <li><label for="sm_HasFlight">Перелёт вкл.</label></li><br>
+            <li style="margin:2px 0 0 152px;" id="sm_vk_li2"><input id="sm_HasTickets" name="sm_HasTickets_n" type="checkbox" /></li>
+			<li><label for="sm_HasTickets">Есть билеты</label></li>
+          </ul>
+		</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="sm_none"><span class="sm_left sm_names">Города/Курорты:</span><span class="sm_left sm_names sm_star">Звёздность:</span><span class="sm_left sm_names sm_hotel">Отели:</span></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div id="sm_resort">
+            <div id="sm_resort_scroll">
+              <ul id="sm_resort_list"></ul>
+            </div>
+          </div>
+          <div id="sm_stars">
+            <ul id="sm_stars_list"></ul>
+          </div>
+          <div id="sm_hotels">
+            <input type="text" id="sm_search_hotels" value="если отеля нет в списке, введите тут..." />
+            <div id="sm_hotels_scroll">
+              <ul id="sm_hotels_list"></ul>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="sm_search_vk"><a href="#" id="sm_searching">Найти</a></td>
+      </tr>
+    </table>
+	<div id="sm_version" style="display:none">ver 1.00.0</div>
+  </div>
+</div>
+<div id="sm_attention"></div>
+

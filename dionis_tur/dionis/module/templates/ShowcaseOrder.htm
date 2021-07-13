@@ -1,0 +1,92 @@
+﻿<div id="sm_dialog" style='display: none;'>
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center"><span class="header">Информация о туре</span> <span id="sm_wikicode"></span><br /><br /></td>
+      <td style="width: 30px;">&nbsp;</td>
+      <td align="center"><span class="header">Контактные данные</span><br /><br /></td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <div id="info_panel">
+          <table>
+            <tr>
+              <td><label>Страна:</label></td>
+              <td><span class="details" id="sCountry"></span></td>
+            </tr>
+            <tr>
+              <td><label>Курорт:</label></td>
+              <td><span class="details" id="sTown"></span></td>
+            </tr>
+            <tr>
+              <td><label>Город&nbsp;вылета:</label></td>
+              <td><span class="details" id="sTownFrom"></span></td>
+            </tr>
+            <tr>
+              <td><label>Дата&nbsp;вылета:</label></td>
+              <td><span class="details" id="sDepartFrom"></span></td>
+            </tr>
+            <tr>
+              <td><label>Ночей:</label></td>
+              <td><span class="details" id="sNights"></span></td>
+            </tr>
+            <tr>
+              <td><label>Отель</label></td>
+              <td><span class="details" id="sHotel"></span><br /><a tabindex="100" rel="nofollow" id="aHotelUrl" href="#" target="_blank" style="white-space: nowrap;">просмотреть фото, описание, отзывы</a></td>
+            </tr>
+            <tr>
+              <td><label>Питание:</label></td>
+              <td><span class="details" id="sMeal"></span></td>
+            </tr>
+            <tr>
+              <td><label>Размещение:</label></td>
+              <td><span class="details" id="sRoom"></span></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td><label style="font-size: 18px;">Цена:</label></td>
+              <td><span class="details" style="font-size: 18px;" id="sPrice"></span></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td style="width: 30px;">&nbsp;</td>
+      <td>
+        <form action="/" id="order_form">
+          <table>
+            <tr>
+              <td colspan="3"><div id="errors"></div></td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span></td>
+              <td><label for="user">Контактное лицо:</label></td>
+              <td><input type="text" id="user" name="user" maxlength="64" /></td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span></td>
+              <td><label for="phone">Контактный телефон:</label></td>
+              <td><input type="text" id="phone" name="phone" maxlength="64" /></td>            
+            </tr>
+            <tr>
+              <td><span class="required">*</span></td>
+              <td><label for="email">E-Mail:</label></td>
+              <td><input type="text" id="email" name="email" maxlength="350" /></td>            
+            </tr>
+            <tr>
+              <td></td>
+              <td><label for="info">Дополнительная информация:</label></td>
+              <td><textarea id="info" rows="4" cols="40"></textarea></td>            
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><input type="image" tabindex="0" id="bSend" src="$module_path$/images/send.gif" /></td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
