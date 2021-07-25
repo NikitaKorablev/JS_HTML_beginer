@@ -1,3 +1,5 @@
+HTML:
+
 1) <a></a> - Ссылка
 2) <h1></h1> - Заголовок
 3) <strong></strong> - Жирный текст
@@ -10,3 +12,12 @@
 	<li> - list
 9) <img src="..."> - добавить изображение
 10) <div></div> - тег контейнера
+
+
+JavaScript:
+1) document.querySelector('.page') - в документе ищет ".page"
+2) элемент.classList.remove('класс'); -- document.querySelector('.page').classList.remove('light-theme'); - стёр light-theme
+3) элемент.classList.add('класс')
+4) document.querySelector('button') - ищем кнопку
+5) элемент.classList.toggle('класс') - переключатель
+6) paragraph.textContent - выводит текстовое содержимое этого абзаца
