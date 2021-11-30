@@ -176,7 +176,3 @@ const first_student = new student("Alex", "Petrov", 2020);
 
 console.log(first_student.getFullName());
 console.log(first_student.getCourse());
-
-
-
-

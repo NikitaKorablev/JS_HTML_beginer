@@ -67,3 +67,9 @@ button.onclick = () => {
 // button.addEventListener('click', addElem(input.value));
 
 input.after(button);
+
+
+let test = document.getElementsByClassName("ol");
+console.log(test);
+test.id = 'test_id';
+console.log(test);
