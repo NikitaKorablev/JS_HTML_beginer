@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "nngu course",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "test",
+    "js",
+    "ts"
+  ],
+  "author": "Nikita",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.14.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  }
+}
